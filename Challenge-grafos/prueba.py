@@ -1,8 +1,9 @@
 from math import inf
 from itertools import product
 
+
 def floyd_warshall(n, edge):
-    archivo= open("archivo.txt","w")
+    archivo= open("Eurotrip.txt","w")
     rn = range(n)
     dist = [[inf] * n for i in rn]
     nxt  = [[0]   * n for i in rn]
