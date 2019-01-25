@@ -3,7 +3,7 @@ from itertools import product
 
 
 def floyd_warshall(n, edge):
-    archivo= open("Eurotrip.txt","w")
+
     rn = range(n)
     dist = [[inf] * n for i in rn]
     nxt  = [[0]   * n for i in rn]
@@ -17,19 +17,19 @@ def floyd_warshall(n, edge):
         if dist[i][j] > sum_ik_kj:
             dist[i][j] = sum_ik_kj
             nxt[i][j]  = nxt[i][k]
-    archivo.write("pair     dist    path")
+    print("pair     dist    path")
     for i, j in product(rn, repeat=2):
         if i != j:
             path = [i]
             while path[-1] != j:
                 path.append(nxt[path[-1]][j])
-            archivo.write("%d → %d  %4d       %s"
+            print("%d → %d  %4d       %s"
                   % (i + 1, j + 1, dist[i][j],
                      ' → '.join(str(p + 1) for p in path)))
-    archivo.close()
 
-if __name__ == '__main__':
-    floyd_warshall(4, [[1, 3, -2], [2, 1, 4], [2, 3, 3], [3, 4, 2], [4, 2, -1]])
+
+
+
 
 
 
