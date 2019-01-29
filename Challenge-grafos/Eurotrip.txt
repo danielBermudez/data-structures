@@ -7,7 +7,8 @@ Korea
 USA
 Canada
 Venezuela
-Colombia,Francia,87
+Peru
+Colombia,Francia,90
 Francia,Italia,54
 Italia,Espana,56
 Italia,Japon,123
