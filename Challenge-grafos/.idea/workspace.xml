@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f685939e-a1f2-48a5-93d1-7ea8ce1a3ef7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Interfaz.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eurotrip.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Eurotrip.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interfaz.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interfaz.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grafo.py" beforeDir="false" afterPath="$PROJECT_DIR$/grafo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paises.xz" beforeDir="false" afterPath="$PROJECT_DIR$/paises.xz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rutas.xz" beforeDir="false" afterPath="$PROJECT_DIR$/rutas.xz" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,34 +15,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grafo.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="212">
-                <caret line="112" column="9" selection-start-line="112" selection-start-column="2" selection-end-line="112" selection-end-column="9" />
+              <first_editor relative-caret-position="165">
+                <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
                 <folding>
                   <element signature="e#0#11#0" expanded="true" />
                 </folding>
               </first_editor>
-              <second_editor relative-caret-position="-90">
+              <second_editor relative-caret-position="-102">
                 <caret line="1" selection-start-line="1" selection-end-line="1" />
               </second_editor>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Interfaz.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="420">
-                <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+              <first_editor relative-caret-position="208">
+                <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
                 <folding>
                   <element signature="e#0#30#0" expanded="true" />
                 </folding>
               </first_editor>
-              <second_editor relative-caret-position="-75" />
+              <second_editor relative-caret-position="-119" />
             </state>
           </provider>
         </entry>
@@ -53,17 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Eurotrip.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="153">
               <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file.xz">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="173" selection-start-column="173" selection-end-column="173" />
             </state>
           </provider>
         </entry>
@@ -72,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/prueba.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="450">
+              <first_editor relative-caret-position="510">
                 <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
                 <folding>
                   <element signature="e#0#20#0" expanded="true" />
@@ -100,6 +88,8 @@
       <find>cargarArchivo</find>
       <find>cargarda</find>
       <find>cargarD</find>
+      <find>cargarDatosComprimidos</find>
+      <find>cargarDatosComprimido</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,8 +102,8 @@
         <option value="$PROJECT_DIR$/archivo.txt" />
         <option value="$PROJECT_DIR$/prueba.py" />
         <option value="$PROJECT_DIR$/Eurotrip.txt" />
-        <option value="$PROJECT_DIR$/grafo.py" />
         <option value="$PROJECT_DIR$/Interfaz.py" />
+        <option value="$PROJECT_DIR$/grafo.py" />
       </list>
     </option>
   </component>
@@ -123,7 +113,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -134,7 +124,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,10 +136,11 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548787466371" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548854061872" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -183,7 +173,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
+      <option name="SDK_HOME" value="C:\Users\pvanegas\AppData\Local\Programs\Python\Python37-32\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -246,20 +236,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49910232" visible="true" weight="0.19957082" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49910232" visible="true" weight="0.12885906" />
       <window_info id="Structure" order="1" sideWeight="0.50089765" side_tool="true" weight="0.19670959" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -267,6 +256,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007153" side_tool="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -306,13 +296,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Interfaz.py</url>
-          <line>119</line>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -327,33 +310,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/tkinter/__init__.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="177">
-            <caret line="2188" column="4" selection-start-line="2188" selection-start-column="4" selection-end-line="2188" selection-end-column="4" />
-          </first_editor>
-          <second_editor relative-caret-position="-105" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/tkinter/__init__.py" />
     <entry file="file://$PROJECT_DIR$/file.xz">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="173" selection-start-column="173" selection-end-column="173" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prueba.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="450">
-            <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
-            <folding>
-              <element signature="e#0#20#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -365,36 +326,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Eurotrip.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="153">
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grafo.py">
+    <entry file="file://$PROJECT_DIR$/prueba.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="212">
-            <caret line="112" column="9" selection-start-line="112" selection-start-column="2" selection-end-line="112" selection-end-column="9" />
+          <first_editor relative-caret-position="510">
+            <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
             <folding>
-              <element signature="e#0#11#0" expanded="true" />
+              <element signature="e#0#20#0" expanded="true" />
             </folding>
           </first_editor>
-          <second_editor relative-caret-position="-90">
-            <caret line="1" selection-start-line="1" selection-end-line="1" />
-          </second_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Interfaz.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="420">
-            <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <first_editor relative-caret-position="208">
+            <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
             <folding>
               <element signature="e#0#30#0" expanded="true" />
             </folding>
           </first_editor>
-          <second_editor relative-caret-position="-75" />
+          <second_editor relative-caret-position="-119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grafo.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="165">
+            <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
+            <folding>
+              <element signature="e#0#11#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor relative-caret-position="-102">
+            <caret line="1" selection-start-line="1" selection-end-line="1" />
+          </second_editor>
         </state>
       </provider>
     </entry>

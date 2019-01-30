@@ -1,21 +1,19 @@
 import lzma
-
 import prueba
 
 paises = []
 rutasRes =[]
 def cargarFloydWarshall(nombre):
-    viajes =  []
+    viajes = []
     paisesconRutas = []
     entrada = open(nombre)
     for linea in entrada:
         # procesar línea
         if(linea.find(",") == -1):
-
             paises.append(linea.strip())
-        else:
 
-            relacion =linea.split(',')
+        else:
+            relacion = linea.split(',')
             origen = relacion[0]
             destino = relacion[1]
             peso = relacion[2]
@@ -27,13 +25,6 @@ def cargarFloydWarshall(nombre):
     resultado = prueba.floyd_warshall((len(paisesconRutas)),viajes)
     return  resultado
 
-
-
-
-
-# print(paises)
-
-# print(len(paises))
 def persistencia(resultado):
     with open("rutas.xz", "wb") as f:
         # f.write(prueba.floyd_warshall((len(paisesconRutas)),viajes)[0].encode('utf-8'))
@@ -72,8 +63,6 @@ def cargarDatosComprimidos():
     with lzma.open("rutas.xz") as f:
         salida = f.read().decode('utf-8').split()
 
-
-
     for i in range(len(salida)):
         rutasRes.append(salida[i].split(","))
     print(rutasRes)
@@ -108,14 +97,6 @@ def buscarPunto2(paises):
         return [["No routes found"]]
     else:
         return  resultado
-
-
-# cargarDatosComprimidos()
-
-
-
-
-
 
 
 

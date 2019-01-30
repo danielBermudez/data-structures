@@ -3,51 +3,55 @@ from tkinter import *
 from tkinter import ttk
 import os.path as path
 import grafo
-# ********** grafo *************
-
-
-# ****** metodo grafo ******************************************
-
-
-    # Lb1 = Listbox(root)
-
-    # totalPaises = len(paises-1)
-    # for x in range(0, len(paises)):
-    #     Lb1.insert(x+1, paises[x])
-    # Lb1.insert(1, "Python")
-    # Lb1.insert(2, "Perl")
-    # Lb1.insert(3, paises[0])
-
-    # Lb1.pack()
-
 
 def cargarArchivo():
-
     entrada = filedialog.askopenfile()
     res =grafo.cargarFloydWarshall(entrada.name)
     grafo.persistencia(res)
-    punto1()
-    punto2()
+    fpunto1()
+    fpunto2()
 
 def buscar():
     viaje= [origen.get(),destino.get()]
     ruta = grafo.buscarPunto2(viaje)
-    cadena = " "
-
+    cadena = "Origen -> Destino -> Costo -> Ruta \n\n"
     cadena =cadena + "-> ".join(ruta[0]) + "\n "
     new_winF(cadena)
-    # ******** interfaz ****************************************
 
 def donothing(val):
     filewin = Toplevel(root)
     button = Button(filewin, text="Do nothing button" + str(val.get()))
     button.pack()
 
+def selection(paises):
+    pos = v.get()
+    selection = "You selected the option " + str(paises)
+    label.config(text = selection)
+
+def new_winF(texto):
+    newwin = Toplevel(root)
+    display = Label(newwin, text=texto)
+    display.pack()
+
+def selection_changed(self):
+    rutas = grafo.buscarPunto1(combo.get())
+    cadena = "Origen -> Destino -> Costo -> Ruta \n\n"
+    for i in range(len(rutas)):
+        cadena =cadena + "-> ".join(rutas[i]) + "\n "
+    new_winF(cadena)
+
+def fpunto1():
+    combo["values"]=paises
+    combo.bind("<<ComboboxSelected>>", selection_changed)
+
+def fpunto2():
+    origen["values"]=paises
+    destino["values"]=paises
+
+paises = grafo.cargarDatosComprimidos()
 root = Tk()
 root.geometry("500x500")
-
 menubar = Menu(root)
-
 
 filemenu = Menu(menubar, tearoff=0)
 filemenu.add_command(label="Open", command=cargarArchivo)
@@ -56,9 +60,7 @@ filemenu.add_separator()
 
 filemenu.add_command(label="Exit", command=root.quit)
 menubar.add_cascade(label="File", menu=filemenu)
-# editmenu = Menu(menubar, tearoff=0)
 
-# editmenu.add_command(label="Undo", command=donothing)
 labelframe = LabelFrame(root, text="Traveling to all other possible countries:")
 labelframe.pack(fill="both", expand="yes")
 
@@ -85,67 +87,20 @@ destino= ttk.Combobox(labelframe2)
 boton = Button(labelframe2,text = "Search",command=buscar)
 boton.pack()
 
-
 destino.place(x=260, y=80)
 res = Label(labelframe, text="")
 root.config(menu=menubar)
 
-# ****************** radio button with array
 v = IntVar()
 v.set(1)  # initializing the choice, i.e. Python
 languages = ["uno", "dos", "tres", "cuatro", "cinco"]
 
-# Label(root, text="You selected the option " + str(languages[v.get()]), justify = LEFT, padx = 20).pack()
-
-def selection(paises):
-    pos = v.get()
-    selection = "You selected the option " + str(paises)
-    label.config(text = selection)
-def new_winF(texto): # new window definition
-    newwin = Toplevel(root)
-    display = Label(newwin, text=texto)
-    display.pack()
-def selection_changed(self):
-
-    rutas = grafo.buscarPunto1(combo.get())
-    cadena = " "
-    for i in range(len(rutas)):
-        cadena =cadena + "-> ".join(rutas[i]) + "\n "
-
-    new_winF(cadena)
-
-def punto1():
-
-    paises = grafo.cargarDatosComprimidos()
-    combo["values"]=paises
-    combo.bind("<<ComboboxSelected>>", selection_changed)
-
-def punto2():
-
-    paises =grafo.cargarDatosComprimidos()
-    origen["values"]=paises
-    destino["values"]=paises
-
-
 if(path.exists("paises.xz") and path.exists("rutas.xz")):
-    punto1()
-    punto2()
+    fpunto1()
+    fpunto2()
 else:
     cargarArchivo()
-
-
-
-
-
-
-
-
-
-
-
-
 
 label = Label(root)
 label.pack()
 root.mainloop()
-
